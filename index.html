@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      margin-top: 70px;
+      background: #333;
+      color: #FFF;
+    }
+  </style>
+  <title>Wait Converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+        <form action="">
+          <div class="input-group mb-3">
+              <input id="lbsInput" type="number" class=" rounded form-control form-control-lg col-9" placeholder="Enter Numbers...">
+              <select class="form-control form-control-lg ml-2 col-3" id="select-metrics">
+                <option>Pound</option>
+                <option>Kilogram</option>
+                <option>Gram</option>
+                <option>Ounce</option>
+              </select>
+          </div>
+        </form>
+
+
+
+        <div class="d-flex flex-column" id="output">
+
+          <div class="card bg-primary mb-2 order-2" id="grams-card">
+            <div class="card-body">
+              <h4>Grams:</h4>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+          
+          <div class="card bg-success mb-2 order-3" id="kg-card">
+            <div class="card-body">
+              <h4>Kilograms:</h4>
+              <div id="kgOutput"></div>
+            </div>
+          </div>
+
+          <div class="card bg-danger mb-2 order-4" id="oz-card">
+            <div class="card-body">
+              <h4>Ounces:</h4>
+              <div id="ozOutput"></div>
+            </div>
+          </div>
+
+          <div class="card bg-warning mb-2 order-1" id="lbs-card">
+            <div class="card-body">
+              <h4>Pounds:</h4>
+              <div id="lbsOutput"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
